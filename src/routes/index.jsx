@@ -5,6 +5,11 @@ import Articles from "~/pages/articles/index.jsx";
 import RequestedArticles from "~/pages/requested-articles/index.jsx";
 import Category from "~/pages/category/index.jsx";
 import Weblayout from "~/layouts/web/index.jsx";
+import QADashboard from "~/pages/qa/index.jsx";
+import UnansweredQuestions from "~/pages/qa/unansweredQuestions/index.jsx";
+import UnSolvedQuestions from "~/pages/qa/unSolvedQuestions/index.jsx";
+import Categories from "~/pages/qa/categories/index.jsx";
+import PopularQuestions from "~/pages/qa/popularQuestions/index.jsx";
 const routes = createBrowserRouter([
   {
     path: "/",
@@ -17,6 +22,26 @@ const routes = createBrowserRouter([
       {
         path: "/kesfet",
         element: <DiscoverPage />,
+      },
+      {
+        path: "/soru-cevap",
+        element: <QADashboard />,
+      },
+      {
+        path: "/cevaplanmamis-sorular",
+        element: <UnansweredQuestions />,
+      },
+      {
+        path: "/cozulmemis-sorular",
+        element: <UnSolvedQuestions />,
+      },
+      {
+        path: "/kategoriler",
+        element: <Categories />,
+      },
+      {
+        path: "/populaer-sorular",
+        element: <PopularQuestions />,
       },
       {
         path: "/makaleler",
